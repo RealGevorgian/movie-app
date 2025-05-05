@@ -71,10 +71,10 @@ cd movie-app
 npm install
 ```
 
-3. Add your TMDb API key inside `MovieDetailPage.js` and wherever applicable:
+3. Add your TMDb API key inside `MovieDetailPage.js` and wherever applicable, or you can use mine:
 
 ```js
-const API_KEY = "your_tmdb_api_key";
+const API_KEY = "56624e735c4d065e5f06729a21b19253";
 ```
 
 4. Run the development server:

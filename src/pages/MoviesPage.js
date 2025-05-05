@@ -4,7 +4,7 @@ import NavigationBar from "../components/NavigationBar";
 import "../utils/App.css";
 import { motion } from "framer-motion";
 
-const API_KEY = "56624e735c4d065e5f06729a21b19253"; // Replace with your actual TMDb API key
+const API_KEY = "56624e735c4d065e5f06729a21b19253";
 
 function MoviesPage() {
     const [movies, setMovies] = useState([]);
