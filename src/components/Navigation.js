@@ -29,7 +29,7 @@ function Navigation() {
         }}>
             <h1 style={{ margin: 0, fontSize: "1.8rem", color: "white" }}>🎬 Movie App</h1>
             <div style={{ display: "flex", gap: "1rem" }}>
-                <button style={navButtonStyle} onClick={() => navigate("/home")}>🏠 Home</button>
+                <button style={navButtonStyle} onClick={() => navigate("/home")}>npmHome</button>
                 <button style={navButtonStyle} onClick={() => navigate("/favorites")}>⭐ Favorites</button>
                 <button style={navButtonStyle} onClick={handleLogout}>🚪 Logout</button>
             </div>

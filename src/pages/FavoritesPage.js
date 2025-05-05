@@ -56,7 +56,7 @@ function FavoritesPage() {
                                 onClick={() => handleRemove(movie.id)}
                                 style={styles.removeButton}
                             >
-                                ❌ Remove
+                                Remove
                             </button>
                         </motion.div>
                     ))}

@@ -22,11 +22,11 @@ function NavigationBar() {
     const handleMouseLeave = () => setHoveredIndex(null);
 
     const buttons = [
-        { label: "🏠 Home", action: () => navigate("/home") },
+        { label: " Home", action: () => navigate("/home") },
         { label: "🔍 Search Movies", action: () => navigate("/movies") },
         { label: "⭐ Favorites", action: () => navigate("/favorites") },
         {
-            label: "📕 Logout",
+            label: "Logout",
             action: () => {
                 localStorage.removeItem("token");
                 window.dispatchEvent(new Event("storage"));
