@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Movie App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and visually appealing React.js application that allows users to:
 
-## Available Scripts
+* View popular movies fetched from the TMDb API
+* Search for movies dynamically with a live filter
+* View detailed movie descriptions, genres, and ratings
+* Add and remove movies to and from favorites
+* Use route protection and basic authentication
+* Experience rich animations and responsive design
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+* Fully responsive UI with gradient background and animations (Framer Motion)
+* Integrated TMDb API for real-time movie data
+* Favorites list with persistent localStorage support
+* NavigationBar reused across all pages
+* Protected and public routes with authentication
+* Movie detail view with proper back navigation to Home or Movies page
+* Animated interactive UI for better user experience
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+movie-app/
+├── public/
+│   ├── index.html
+│   ├── logo192.png
+│   ├── ...
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── mockMovies.js
+│   │   ├── Navigation.js
+│   │   └── NavigationBar.js
+│   ├── pages/
+│   │   ├── FavoritesPage.js
+│   │   ├── HomePage.js
+│   │   ├── LoginPage.js
+│   │   ├── MovieDetailPage.js
+│   │   ├── MoviesPage.js
+│   │   └── StaticMovieDetailPage.js
+│   ├── redux/
+│   │   ├── favoritesSlice.js
+│   │   └── store.js
+│   ├── routes/
+│   │   ├── AppRouter.js
+│   │   ├── PrivateRoute.js
+│   │   └── PublicRoute.js
+│   ├── utils/
+│   │   ├── auth.js
+│   │   └── App.css
+├── index.css
+├── index.js
+├── App.jspackage.json
+└── README.md
+```
 
-### `npm test`
+## Installation & Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repo:
 
-### `npm run build`
+```bash
+git clone https://github.com/your-username/movie-app.git
+cd movie-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Add your TMDb API key inside `MovieDetailPage.js` and wherever applicable:
 
-### `npm run eject`
+```js
+const API_KEY = "your_tmdb_api_key";
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Run the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* React.js
+* React Router
+* Redux Toolkit
+* TMDb API
+* Framer Motion (for animations)
+* LocalStorage
+* Plain CSS
 
-## Learn More
+## Future Enhancements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Add user signup/login with backend
+* Store favorites per user in database
+* Improve accessibility
+* Implement dark/light theme toggle
+* Infinite scroll or pagination on MoviesPage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is for educational/demo purposes only.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built with passion for great UI/UX and modern React development.
