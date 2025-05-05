@@ -92,19 +92,3 @@ npm start
 * Framer Motion (for animations)
 * LocalStorage
 * Plain CSS
-
-## Future Enhancements
-
-* Add user signup/login with backend
-* Store favorites per user in database
-* Improve accessibility
-* Implement dark/light theme toggle
-* Infinite scroll or pagination on MoviesPage
-
-## License
-
-This project is for educational/demo purposes only.
-
----
-
-Built with passion for great UI/UX and modern React development.
